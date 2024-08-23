@@ -1,0 +1,343 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+#back-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 50px;
+    max-height: 50px;
+    width: 6vw;
+    height: 6vw;
+    box-sizing: border-box;
+    padding: 2%;
+    font-size: 20px;
+    color: white;
+    left: 4%;
+    top: 4%;
+    border: 2px solid rgba(1, 33, 130, 0.6);
+    border-radius: 12px;
+}
+
+#back-btn:hover {
+    cursor: pointer;
+    background-color: rgba(1, 33, 130, 0.2);
+}
+
+.error-message {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+    background-color: #E3F2FD;
+    color: #1565C0;
+    text-shadow: 0 0 1px #FFFFFF;
+    border: 2px solid #64B5F6;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.container {
+    position: relative;
+    width: 880px;
+    max-width: 92vw;
+    height: 700px;
+    max-height: 92vh;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: rgba(22, 49, 101, 0.8);
+    border-radius: 24px;
+    display: flex;
+}
+
+.split {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 37, 76, 0.9);
+}
+
+.left {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.register-form {
+    font-family: "Libre Baskerville", serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px;
+    width: 100%;
+    height: 99%;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.register-form::-webkit-scrollbar {
+    width: 5px;
+}
+
+.register-form::-webkit-scrollbar-track {
+    background: #0053ac;
+    border-radius: 18px;
+}
+
+.register-form::-webkit-scrollbar-thumb {
+    background: #ff5cb3ba;
+    border-radius: 18px;
+}
+
+.register-form::-webkit-scrollbar-thumb:hover {
+    background: #ff5cb3;
+}
+
+.register-form h1 {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.form-group {
+    width: 90%;
+    margin-bottom: 12px;    
+}
+
+.form-group label {
+    color: aliceblue;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 3px solid rgb(45, 155, 185);
+    border-radius: 5px;
+    font-family: "Libre Baskerville", serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #ff5cb3;
+    box-shadow: 0 0 5px rgba(255, 92, 179, 0.5);
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label {
+    margin-top: 1%;
+    cursor: pointer;
+    text-align: center;
+    padding: 6px;
+    width: 25%;
+    border: 2px solid rgb(45, 155, 185);
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: rgb(45, 155, 185);
+    box-shadow: 0 0 8px #008cff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.phone-number-group {
+    display: flex;
+}
+
+#countryCode {
+    width: 80px;
+}
+
+#otherCountryCode {
+    width: 80px;
+    display: none;
+}
+
+#phoneNumber {
+    margin-left: 4px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    font-size: 16px;
+}
+
+.register-button-container {
+    position: sticky;
+    bottom: 4px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-button {
+    height: 48px;
+    width: 140px;
+    font-size: 18px;
+    background-color: #ff5cb3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Libre Baskerville", serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.register-button:hover {
+    background-color: #c71585;
+}
+
+.right {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 8px solid rgba(17, 37, 76, 0.99);
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    object-fit: cover;
+}
+
+@media (max-width: 835px) {
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    .checkbox-group label {
+        font-size: 0.8rem;
+    }
+    .form-input,
+    .form-textarea {
+        font-size: 0.9rem;
+    }
+    .radio-group label {
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .register-form h1 {
+        font-size: 1.2rem;
+    }
+    .container {
+        height: 85vh;
+    }
+    .register-button {
+        height: 40px;
+        width: 132px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        width: 90vw;
+        height: 80vh;
+        flex-direction: column-reverse;
+    }
+    .left {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 12px;
+    }
+    .right {
+        flex: 0.5;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 24px;
+    }
+    .right img {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        border: 8px solid rgba(17, 37, 76, 0.99);
+        border-radius: 24px;
+    }
+    .error-message {
+        font-size: 0.9rem;
+    }
+    #back-btn {
+        top: 28vh;
+        left: 6vw;
+        min-height: 40px;
+        min-width: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .right {
+        flex: 0.3;
+    }
+    .error-message {
+        font-size: 0.8rem;
+    }
+    #back-btn {
+        top: 21vh;
+        left: 7vw;
+        min-height: 40px;
+        min-width: 40px;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Zen Dragon</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p id="errorMessage" class="error-message"></p>
+    <div class="container">
+        <a id="back-btn">&#10094;</a>
+        <div class="split left">
+            <form action=".." id="register-form" class="register-form">
+                <h1>Register Form</h1>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Your first name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Your last name">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" class="form-textarea" placeholder="e.g. 69 Rizzler Street, Ohio, USA 69420"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email" class="form-input" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <div class="phone-number-group">
+                        <select id="countryCode" name="countryCode" class="form-input">
+                            <option value="none"></option>
+                            <option value="+62">+62</option>
+                            <option value="+86">+86</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="otherCountryCode" name="otherCountryCode" class="form-input" placeholder="(code)">
+                        <input type="text" id="phoneNumber" name="phoneNumber" class="form-input" placeholder="0xxxxxxxxxxx">
+                    </div>
+                </div>           
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="termsOfService" name="termsOfService">
+                        <label for="termsOfService">I agree to the Terms of Service</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="emailNotification" name="emailNotification">
+                        <label for="emailNotification">I want to receive email notifications</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="phoneNotification" name="phoneNotification">
+                        <label for="phoneNotification">I want to receive phone notifications</label>
+                    </div>
+                </div>
+                     
+                <div class="register-button-container">
+                    <button type="submit" class="register-button">REGISTER</button>
+                </div>
+            </form>
+        </div>
+        <div class="split right">
+            <img src="../assets/register.jpg" alt="Monsters Preview Image">
+        </div>
+    </div>
+</body>
+</html>
