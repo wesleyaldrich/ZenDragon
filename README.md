@@ -1,7 +1,15 @@
 # Front-end project: Zen Dragon Academy
 
-  concept and code by Wesley Aldrich
-  <br>
-  designs by Kadek Artika Chintya Meliana
-  <br>
-  view link: https://wesleyaldrich.github.io/ZenDragon/
+  Zen Dragon Academy is a static website project for a fictional academy that train dragons.
+  More details are elaborated as contents in the website.
+
+  What might be noted about this website:
+  - This website is created with **plain html, CSS, and JavaScript**.
+  - Besides the images (mostly taken from **Monster Hunter**), every other contents are original.
+  - **Register Page** validations are intentionally strict for the sake of **JavaScript practice**.
+
+---
+
+- Concept and Code by **Wesley Aldrich**
+- Visual Designs by **Kadek Artika Chintya Meliana**
+- Link: https://wesleyaldrich.github.io/ZenDragon/
