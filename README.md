@@ -1,3 +1,5 @@
 # Front-end project: Zen Dragon Academy
-
-# view link: https://wesleyaldrich.github.io/ZenDragon/
+  concept and code by Wesley Aldrich
+  designs by Kadek Artika Chintya Meliana
+  
+  view link: https://wesleyaldrich.github.io/ZenDragon/
