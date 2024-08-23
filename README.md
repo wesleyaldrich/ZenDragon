@@ -7,6 +7,7 @@
   - This website is created with **plain html, CSS, and JavaScript**.
   - Besides the images (mostly taken from **Monster Hunter**), every other contents are original.
   - **Register Page** validations are intentionally strict for the sake of **JavaScript practice**.
+  - Every page is **inefficiently responsive**, it makes a lot of adjustments even for small changes.
 
 ---
 
